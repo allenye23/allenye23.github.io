@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://allenye23.github.io/"/>
-  <updated>2017-09-24T05:05:15.652Z</updated>
+  <updated>2017-09-24T15:33:07.356Z</updated>
   <id>http://allenye23.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://allenye23.github.io/2017/09/24/docker-basic-command/"/>
     <id>http://allenye23.github.io/2017/09/24/docker-basic-command/</id>
     <published>2017-09-24T04:58:44.000Z</published>
-    <updated>2017-09-24T05:05:15.652Z</updated>
+    <updated>2017-09-24T15:33:07.356Z</updated>
     
     <content type="html"><![CDATA[<h3 id="运行image"><a href="#运行image" class="headerlink" title="运行image"></a>运行image</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker run -d -p --privileage 80:80 -p 22:22 zengguang/java</div></pre></td></tr></table></figure><h3 id="进入运行中的docker容器"><a href="#进入运行中的docker容器" class="headerlink" title="进入运行中的docker容器"></a>进入运行中的docker容器</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker exec -it container_id /bin/bash</div></pre></td></tr></table></figure><h3 id="关闭正在运行的docker容器"><a href="#关闭正在运行的docker容器" class="headerlink" title="关闭正在运行的docker容器"></a>关闭正在运行的docker容器</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker stop container_id</div></pre></td></tr></table></figure><h3 id="关闭所有正在运行的容器"><a href="#关闭所有正在运行的容器" class="headerlink" title="关闭所有正在运行的容器"></a>关闭所有正在运行的容器</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker stop $(docker ps -a)</div></pre></td></tr></table></figure><h3 id="移除容器"><a href="#移除容器" class="headerlink" title="移除容器"></a>移除容器</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker rm container_id</div></pre></td></tr></table></figure><h3 id="移除所有容器"><a href="#移除所有容器" class="headerlink" title="移除所有容器"></a>移除所有容器</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker rm $(docker ps -a)</div></pre></td></tr></table></figure><h3 id="移除docker镜像"><a href="#移除docker镜像" class="headerlink" title="移除docker镜像"></a>移除docker镜像</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker rmi image_id</div></pre></td></tr></table></figure><h3 id="移除所有docker镜像"><a href="#移除所有docker镜像" class="headerlink" title="移除所有docker镜像"></a>移除所有docker镜像</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker rmi $(docker images -q)</div></pre></td></tr></table></figure><h3 id="从压缩包中导入docker镜像"><a href="#从压缩包中导入docker镜像" class="headerlink" title="从压缩包中导入docker镜像"></a>从压缩包中导入docker镜像</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker load &lt; docker_images.tar.gz</div></pre></td></tr></table></figure><h3 id="将docker镜像打包"><a href="#将docker镜像打包" class="headerlink" title="将docker镜像打包"></a>将docker镜像打包</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker save &gt; docker-images.tar.gz</div></pre></td></tr></table></figure><h3 id="为docker镜像打tag"><a href="#为docker镜像打tag" class="headerlink" title="为docker镜像打tag"></a>为docker镜像打tag</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker tag &lt;imageID&gt; &lt;namespace&gt;/&lt;imagename&gt;:tag</div></pre></td></tr></table></figure>]]></content>
     
@@ -33,6 +33,8 @@
       
     
     </summary>
+    
+      <category term="docker" scheme="http://allenye23.github.io/categories/docker/"/>
     
     
       <category term="docker" scheme="http://allenye23.github.io/tags/docker/"/>
