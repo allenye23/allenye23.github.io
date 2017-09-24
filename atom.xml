@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Matrix</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://allenye23.github.io/"/>
+  <updated>2017-09-24T05:05:15.652Z</updated>
+  <id>http://allenye23.github.io/</id>
+  
+  <author>
+    <name>Allen Ye</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>docker basic command</title>
+    <link href="http://allenye23.github.io/2017/09/24/docker-basic-command/"/>
+    <id>http://allenye23.github.io/2017/09/24/docker-basic-command/</id>
+    <published>2017-09-24T04:58:44.000Z</published>
+    <updated>2017-09-24T05:05:15.652Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="运行image"><a href="#运行image" class="headerlink" title="运行image"></a>运行image</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker run -d -p --privileage 80:80 -p 22:22 zengguang/java</div></pre></td></tr></table></figure><h3 id="进入运行中的docker容器"><a href="#进入运行中的docker容器" class="headerlink" title="进入运行中的docker容器"></a>进入运行中的docker容器</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker exec -it container_id /bin/bash</div></pre></td></tr></table></figure><h3 id="关闭正在运行的docker容器"><a href="#关闭正在运行的docker容器" class="headerlink" title="关闭正在运行的docker容器"></a>关闭正在运行的docker容器</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker stop container_id</div></pre></td></tr></table></figure><h3 id="关闭所有正在运行的容器"><a href="#关闭所有正在运行的容器" class="headerlink" title="关闭所有正在运行的容器"></a>关闭所有正在运行的容器</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker stop $(docker ps -a)</div></pre></td></tr></table></figure><h3 id="移除容器"><a href="#移除容器" class="headerlink" title="移除容器"></a>移除容器</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker rm container_id</div></pre></td></tr></table></figure><h3 id="移除所有容器"><a href="#移除所有容器" class="headerlink" title="移除所有容器"></a>移除所有容器</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker rm $(docker ps -a)</div></pre></td></tr></table></figure><h3 id="移除docker镜像"><a href="#移除docker镜像" class="headerlink" title="移除docker镜像"></a>移除docker镜像</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker rmi image_id</div></pre></td></tr></table></figure><h3 id="移除所有docker镜像"><a href="#移除所有docker镜像" class="headerlink" title="移除所有docker镜像"></a>移除所有docker镜像</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker rmi $(docker images -q)</div></pre></td></tr></table></figure><h3 id="从压缩包中导入docker镜像"><a href="#从压缩包中导入docker镜像" class="headerlink" title="从压缩包中导入docker镜像"></a>从压缩包中导入docker镜像</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker load &lt; docker_images.tar.gz</div></pre></td></tr></table></figure><h3 id="将docker镜像打包"><a href="#将docker镜像打包" class="headerlink" title="将docker镜像打包"></a>将docker镜像打包</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker save &gt; docker-images.tar.gz</div></pre></td></tr></table></figure><h3 id="为docker镜像打tag"><a href="#为docker镜像打tag" class="headerlink" title="为docker镜像打tag"></a>为docker镜像打tag</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker tag &lt;imageID&gt; &lt;namespace&gt;/&lt;imagename&gt;:tag</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;运行image&quot;&gt;&lt;a href=&quot;#运行image&quot; class=&quot;headerlink&quot; title=&quot;运行image&quot;&gt;&lt;/a&gt;运行image&lt;/h3&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=
+      
+    
+    </summary>
+    
+    
+      <category term="docker" scheme="http://allenye23.github.io/tags/docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>tomcat manager</title>
+    <link href="http://allenye23.github.io/2017/09/24/tomcat-manager/"/>
+    <id>http://allenye23.github.io/2017/09/24/tomcat-manager/</id>
+    <published>2017-09-24T04:55:06.000Z</published>
+    <updated>2017-09-24T04:58:24.576Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="tomcat-manager"><a href="#tomcat-manager" class="headerlink" title="tomcat manager"></a>tomcat manager</h1><p>tomcat 默认管理界面默认情况下是无法登陆的</p><p>需要在conf中设置账号和密码</p><p>角色在webapps目录下的web.xml中可以看到</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">&lt;?xml version='1.0' encoding='utf-8'?&gt;</div><div class="line"> <span class="tag">&lt;<span class="name">tomcat-users</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">role</span> <span class="attr">rolename</span>=<span class="string">"tomcat"</span>/&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">role</span> <span class="attr">rolename</span>=<span class="string">"role1"</span>/&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">role</span> <span class="attr">rolename</span>=<span class="string">"manager"</span>/&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">role</span> <span class="attr">rolename</span>=<span class="string">"admin"</span>/&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">role</span> <span class="attr">rolename</span>=<span class="string">"manager-gui"</span>/&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">role</span> <span class="attr">rolename</span>=<span class="string">"admin-gui"</span>/&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">role</span> <span class="attr">rolename</span>=<span class="string">"admin-script"</span>/&gt;</span></div><div class="line">  </div><div class="line">   <span class="tag">&lt;<span class="name">user</span> <span class="attr">username</span>=<span class="string">"tomcat"</span> <span class="attr">password</span>=<span class="string">"tomcat"</span> <span class="attr">roles</span>=<span class="string">"tomcat"</span>/&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">user</span> <span class="attr">username</span>=<span class="string">"admin"</span> <span class="attr">password</span>=<span class="string">"admin"</span> <span class="attr">roles</span>=<span class="string">"admin,manager,tomcat,manager-gui,admin-gui,admin-script"</span>/&gt;</span></div><div class="line"> </div><div class="line"></div><div class="line"> <span class="tag">&lt;/<span class="name">tomcat-users</span>&gt;</span></div></pre></td></tr></table></figure><p>设置了用户之后，还有可能是出现403错误</p><p>需要在conf/Catalina/localhost 下增加manager.xml，文件如下<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">Context</span> <span class="attr">privileged</span>=<span class="string">"true"</span> <span class="attr">antiResourceLocking</span>=<span class="string">"false"</span></span></div><div class="line"><span class="tag">         <span class="attr">docBase</span>=<span class="string">"$&#123;catalina.home&#125;/webapps/manager"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">Valve</span> <span class="attr">className</span>=<span class="string">"org.apache.catalina.valves.RemoteAddrValve"</span> <span class="attr">allow</span>=<span class="string">"^.*$"</span> /&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">Context</span>&gt;</span></div></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;tomcat-manager&quot;&gt;&lt;a href=&quot;#tomcat-manager&quot; class=&quot;headerlink&quot; title=&quot;tomcat manager&quot;&gt;&lt;/a&gt;tomcat manager&lt;/h1&gt;&lt;p&gt;tomcat 默认管理界面默认情况下是无法登
+      
+    
+    </summary>
+    
+    
+      <category term="tomcar manager" scheme="http://allenye23.github.io/tags/tomcar-manager/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>log4j2 tcp Appender configure</title>
+    <link href="http://allenye23.github.io/2017/09/24/log4j2-tcp-Appender-configure/"/>
+    <id>http://allenye23.github.io/2017/09/24/log4j2-tcp-Appender-configure/</id>
+    <published>2017-09-24T04:42:08.000Z</published>
+    <updated>2017-09-24T04:51:47.987Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="启动脚本"><a href="#启动脚本" class="headerlink" title="启动脚本"></a>启动脚本</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">java -cp log4j-api-2.2.jar;log4j-core-2.2.jar  org.apache.logging.log4j.core.net.server.TcpSocketServer 5501 server.xml</div></pre></td></tr></table></figure><h2 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</div><div class="line"><span class="tag">&lt;<span class="name">configuration</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">properties</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"directory"</span>&gt;</span>/log<span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"filename"</span>&gt;</span>test<span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line"><span class="comment">&lt;!-- &lt;property name="pattern"&gt;#%d&#123;yyyy-MM-dd HH:mm:ss.SSS&#125;|%-5.5p|%-10.10t|%-20.20C:%-5.5L|%msg%n&lt;/property&gt; --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"pattern"</span>&gt;</span>#%d&#123;yyyy-MM-dd HH:mm:ss.SSS&#125;|%-5.5p|%-10.10t|%c:%-5.5l|%msg%n<span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line"><span class="comment">&lt;!-- It will look like that: 2013-04-03 07:37:51.993 | WARN | main | lnetgateway.Server:56 </span></div><div class="line"><span class="comment">| My app is logging stuff --&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">properties</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">appenders</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">Console</span> <span class="attr">name</span>=<span class="string">"Console"</span> <span class="attr">target</span>=<span class="string">"SYSTEM_OUT"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">PatternLayout</span> <span class="attr">pattern</span>=<span class="string">"$&#123;pattern&#125;"</span> /&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">Console</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">RollingFile</span> <span class="attr">name</span>=<span class="string">"RollingFile"</span> <span class="attr">fileName</span>=<span class="string">"$&#123;directory&#125;/$&#123;filename&#125;.log"</span></span></div><div class="line"><span class="tag"><span class="attr">filePattern</span>=<span class="string">"$&#123;directory&#125;/$&#123;date:yyyy-MM&#125;/$&#123;filename&#125;-%d&#123;yyyy-MM-dd&#125;-%i.log.gz"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">PatternLayout</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">pattern</span>&gt;</span>$&#123;pattern&#125;<span class="tag">&lt;/<span class="name">pattern</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">PatternLayout</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">Policies</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">TimeBasedTriggeringPolicy</span> /&gt;</span><span class="comment">&lt;!-- Rotated everyday --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">SizeBasedTriggeringPolicy</span> <span class="attr">size</span>=<span class="string">"100 MB"</span> /&gt;</span> <span class="comment">&lt;!-- Or every 100 MB --&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">Policies</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">RollingFile</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">appenders</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">loggers</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">root</span> <span class="attr">level</span>=<span class="string">"debug"</span>&gt;</span> <span class="comment">&lt;!-- We log everything --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">appender-ref</span> <span class="attr">ref</span>=<span class="string">"RollingFile"</span> /&gt;</span> <span class="comment">&lt;!-- And to a rotated file --&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">root</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">loggers</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;启动脚本&quot;&gt;&lt;a href=&quot;#启动脚本&quot; class=&quot;headerlink&quot; title=&quot;启动脚本&quot;&gt;&lt;/a&gt;启动脚本&lt;/h2&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pr
+      
+    
+    </summary>
+    
+    
+      <category term="log4j2,tcp appender" scheme="http://allenye23.github.io/tags/log4j2-tcp-appender/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://allenye23.github.io/2017/09/24/hello-world/"/>
+    <id>http://allenye23.github.io/2017/09/24/hello-world/</id>
+    <published>2017-09-24T03:35:48.345Z</published>
+    <updated>2017-09-24T03:35:48.347Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
